@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ShowHide from "./components/ShowHide";
+import Counter from "./components/Counter";
 
 function App() {
-  return <ShowHide></ShowHide>;
+  return <Counter></Counter>;
 }
 
 export default App;
