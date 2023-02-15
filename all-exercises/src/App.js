@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import CustomButton from "./components/CustomButton";
+import { useState } from "react";
 
 function App() {
+  const [clickedButton, setClickedButton] = useState("");
+
+  const setButton = (clicked) => {
+    setClickedButton(clicked);
+  };
+
+  const colors = ["blue", "red", "yellow"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <>
+        {colors.map((colorVal) => {
+          return (
+            <CustomButton
+              color={colorVal}
+              key={colorVal}
+              updateTextCallBack={setButton}
+            ></CustomButton>
+          );
+        })}
+      </>
+      <h1>The Color selected is: {clickedButton}</h1>
     </div>
   );
 }
