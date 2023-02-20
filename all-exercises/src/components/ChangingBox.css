@@ -1,3 +1,47 @@
+.red {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+}
+
+.green {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  position: relative;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(86, 253, 20);
+
+  position: relative;
+}
+
+.blue {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: relative;
+}
+
+.yellow {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  position: relative;
+}
+
+.plum {
+  width: 50px;
+  height: 50px;
+  background-color: plum;
+  position: relative;
+}
+
 .box1 {
   width: 50px;
   height: 50px;
