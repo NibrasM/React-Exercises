@@ -1,0 +1,13 @@
+.navbar {
+  background-color: lightblue;
+  height: 10vh;
+  border: 1px solid black;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+li {
+  padding: 20px;
+  text-decoration: none;
+}
