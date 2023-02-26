@@ -3,7 +3,7 @@ import Grandson from "./Grandson";
 function Son() {
   return (
     <div>
-      Son== <Grandson />
+      <Grandson />
     </div>
   );
 }

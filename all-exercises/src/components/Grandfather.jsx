@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Father from "./Father";
+import { createContext } from "react";
+export const GiftConetext = createContext();
+
 function Grandfather() {
+  const [giftsArr, setGiftsArr] = useState([]);
+
   return (
     <div>
-      GrandFather == <Father />
+      <GiftConetext.Provider value={{ giftsArr, setGiftsArr }}>
+        <Father />
+      </GiftConetext.Provider>
     </div>
   );
 }
