@@ -5,6 +5,8 @@ export default function ShoesPage() {
     "https://63f74cb5e40e087c958b9059.mockapi.io/shoes"
   );
 
+  console.log(object.isLoaded);
+
   if (object.error) {
     return <div>Error: {object.error.message}</div>;
   } else {
